@@ -326,5 +326,65 @@ for letter in word:
     # Only print out the letter i
     if letter == "i":
         print letter
+prices = {"banana": 4,
+"apple": 2,
+"orange": 1.5,
+"pear": 3
+}
 
+stock = {
+    "banana": 6,
+"apple": 0,
+"orange": 32,
+"pear": 15
+}
+for key in prices:
+    print key
+    print "price: %s" % prices[key]
+    print "stock: %s" % stock[key]
 
+total = 0
+
+for prices in prices:
+    t = prices[key] * stock[key]
+    total = t + total
+    print total
+
+groceries = {"banana", "orange", "apple"}
+
+def compute_bill(food):
+    total = 0
+    for meal in food:
+        if stock[meal] > 0:
+            total += prices[meal]
+            stock[meal] -=1
+    return total
+
+n = [1, 3, 5]
+
+print n[1]
+
+n = [1, 3, 5]
+n[1] = n[1] * 5
+print n
+
+n.append(4)
+
+n = [3, 5, 7]
+
+for i in range(0, len(n)):
+    n[i] = n[i] * 2
+# Don't forget to return your new list!
+
+print double_list(n)
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+print a + b
+
+print "Counting..."
+
+for i in range(10):
+    print i
+
+    
